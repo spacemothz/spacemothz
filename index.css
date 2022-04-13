@@ -1,0 +1,127 @@
+body {
+  background-color: #f7efef;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  font-family: 'Courier New', Courier, monospace;
+
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50px 1fr 1fr 100px;
+  grid-gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  
+}
+
+.container div {
+  padding: 10px;
+  border: 0px black solid;
+
+}
+
+
+
+.header {
+  grid-column: 1 / 4;
+  text-align: center;
+  font-size: 30px;
+  background-color: peachpuff;
+  
+
+
+}
+
+.small {
+  grid-row: 2 / 4;
+  display:list-item;
+  align-items: center;
+  justify-content: center;
+
+
+  
+}
+
+.large {
+  grid-row-start: 2;
+  grid-row-end: span 2;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  text-align: center;
+  justify-content: center;
+  margin-top: 60px;
+} 
+
+.h2 {
+  size: 50px;
+}
+
+.recipes {
+  border-radius: 10px;
+  background-color: peachpuff;
+  font: 17px;
+  padding: 10px 15px;
+  margin-top: 10px;
+  }
+
+.footer {
+  grid-column: 1 / 4;
+  text-align: center;
+  font-size: 20px;
+  background-color: peachpuff;
+}
+
+
+.socials {
+  list-style-type: square;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 10px;
+}
+
+
+
+.spacemothz {
+  width: 230px;
+  border-radius: 100px;
+  margin: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.about-me {
+  text-align: center;
+  font-size: 15px;
+}
+
+ul{
+  flex: 1;
+  text-align: right;
+
+}
+
+ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0 25px;
+}
+
+ul li a{
+  text-decoration: none;
+  color: black;
+  padding: 0 10px;
+  position: relative;
+
+}
+
+ul li a:hover::after{
+  width: 100%;
+
+}
